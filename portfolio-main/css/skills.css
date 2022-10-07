@@ -1,0 +1,91 @@
+.skills {
+    background-color: #0B2027;
+    padding: 20px 100px;
+    color: #CFD7C7;
+}
+
+.skills__titulo {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.skills__lista {
+    display: flex;
+    justify-content: space-around;  
+}
+
+.skills__lista-icones{
+    background: #0B2027;
+    border: 1px solid #CFD7C7;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    width: 100px;
+    height: 100px;
+}
+
+.skills__lista-itens {
+    text-align: center;
+}
+
+
+@media screen and (min-width: 0px) {
+    .skills {
+        padding: 20px 0px;
+        width: 576px;
+        margin: 0 auto;
+    }
+
+    .skills__lista {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .skills__lista-itens {
+        margin-bottom: 30px;
+        width: 33%;
+    }   
+}
+
+@media screen and (min-width: 576px) {
+    .skills {
+        padding: 20px 0px;
+        width: 768px;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .skills {
+        padding: 20px 0px;
+        width: 1024px;
+    } 
+
+    .skills__lista {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 30px;
+    }
+
+    .skills__lista-itens {
+        margin-bottom: 30px;
+        width: 20%;
+    } 
+}
+
+
+@media screen and (min-width: 1024px) {
+    .skills {
+        padding: 20px 0px;
+        max-width: 1400px;
+        width: 100%;
+    } 
+}
+
+

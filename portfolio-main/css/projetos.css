@@ -1,0 +1,165 @@
+.projetos {
+    background-color: #0B2027;
+    color: #CFD7C7;
+    padding: 20px 100px;
+    text-align: center;
+}
+
+.projetos__titulo {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 100px;
+}
+
+.projetos__container {
+    margin-top: 50px;
+}
+
+.projetos__container___lista {
+    display: flex;
+    margin-top: 50px;
+}
+
+.projetos__container___item {
+    margin: 50px;
+    text-align: center;
+}
+
+.projetos__container___item-titulo {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+
+.projetos__container___item-subtitulo {
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.projetos__container___item-botoes {
+    background-color: #CFD7C7;
+    border-radius: 20px;
+    border: 1px solid #13293D;
+    color: #13293D;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-right: 10px;
+    text-decoration: none;
+    height: 30px;
+    width: 100px;
+    transition: 2s;
+}
+
+.projetos__container___item-botoes:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.projetos__container___imagem {
+    margin: 20px;
+    width: 600px;
+    height: 350px;
+    border: 2px solid #CFD7C7;
+    border-radius: 10px;
+}
+
+.projetos__botaoOutros {
+    background-color: #CFD7C7;
+    border-radius: 20px;
+    color: #13293D;
+    border: 1px solid #13293D;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    height: 40px;
+    width: 200px;
+    transition: 2s;
+}
+
+.projetos__botaoOutros:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 0px) {
+    .projetos {
+        padding: 20px 0px;
+        width: 576px;
+    }
+
+    .projetos__container___lista {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .projetos__container___lista:nth-child(1),
+    .projetos__container___lista:nth-child(3) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .projetos__container___imagem {
+        width: 500px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .projetos__botaoOutros {
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width: 576px) {
+    .projetos {
+        padding: 20px 0px;
+        width: 768px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .projetos {
+        padding: 20px 0px;
+        width: 1024px;
+    }
+
+    .projetos__container___lista {
+        display: flex;
+        flex-direction: row;
+    } 
+
+    .projetos__container___lista:nth-child(1),
+    .projetos__container___lista:nth-child(3) {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .projetos__container___imagem {
+        width: 600px;
+        height: 350px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .projetos {
+        padding: 20px 0px;
+        max-width: 1400px;
+        width: 100%;
+    }
+
+    .projetos__container {
+        padding: 0px 100px;
+    }
+
+    .projetos__container___item {
+        margin: 100px;
+        text-align: center;
+    }
+
+}

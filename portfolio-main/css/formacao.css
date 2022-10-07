@@ -1,0 +1,91 @@
+.formacao {
+    background-color: #0B2027;
+    padding: 20px 100px;
+    color: #CFD7C7;
+}
+
+.formacao__titulo {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.formacao__lista {
+    display: flex;
+    justify-content: space-around;
+}
+
+.formacao__lista-itens {
+    border: 2px solid #13293D;
+    background-color: #13293D;
+    border-radius: 10px;
+    height: 200px;
+    text-align: center;
+    width: 300px;
+}
+
+.formacao__lista-descricao {
+    margin-top: 10px;
+}
+
+.formacao__lista-icones {
+    border-radius: 10px;
+    height: 200px;
+    width: 300px;
+}
+
+
+@media screen and (min-width: 0px) {
+    .formacao {
+        padding: 20px 0px;
+        width: 576px;
+    }
+
+    .formacao__lista {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+    
+    .formacao__lista-itens {
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .formacao {
+        padding: 20px 0px;
+        width: 768px;
+    }
+}  
+
+
+@media screen and (min-width: 768px) {
+    .formacao {
+        padding: 20px 0px;
+        width: 1024px;
+    }
+
+    .formacao__lista {
+        display: flex;
+        flex-direction: row;
+        padding: 0 30px;
+    } 
+
+    .formacao__lista-itens {
+        margin-bottom: 20px;
+    }
+}  
+
+
+@media screen and (min-width: 1024px) {
+    .formacao {
+        padding: 20px 0px;
+        max-width: 1400px;
+        width: 100%;
+    }
+}  
+
+

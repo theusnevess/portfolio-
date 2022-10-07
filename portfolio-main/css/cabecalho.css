@@ -1,0 +1,95 @@
+.cabecalho {
+    background-color: #13293D;
+    color: #F3EFF5;
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px 100px; 
+    max-width: 1150px;
+    width: 100%;
+}
+
+.cabecalho__nome {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.cabecalho__menu-lista {
+    display: flex;
+    margin-top: 10px; 
+}
+
+.cabecalho__menu-link {
+    color: #F3EFF5;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+.cabecalho__menu-link:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width: 0px) {
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px; 
+        width: 576px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .cabecalho__nome {
+        margin-bottom: 20px;
+    }
+
+    .cabecalho__menu-link {
+        margin-right: 20px;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-Width:576px) {
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 20px 0px; 
+
+        width: 768px;
+    }
+}
+
+@media screen and (min-Width:768px) {
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 20px 0px; 
+        width: 1024px;
+    }
+
+
+    .cabecalho__nome,
+    .cabecalho__menu-lista {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (min-Width:1024px) {
+    .cabecalho {
+        display: flex;
+        flex-direction: row;
+        padding: 20px 0px; 
+        max-width: 1400px;
+        width: 100%;
+    }
+
+    .cabecalho__nome,
+    .cabecalho__menu-lista {
+        padding: 0 70px;
+    }
+}
